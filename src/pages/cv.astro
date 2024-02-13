@@ -1,0 +1,206 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-lg text-justify">
+    Welcome to my digital CV corner! Explore the roadmap of my coding journey,
+    from the roots of learning to the branches of expertise. Delve into my
+    skills, projects, and experiences crafted with dedication and passion.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Tech Stack</div>
+  </div>
+
+  <div class="md:columns-3 w-full mb-10">
+    <p class="w-full font-bold">Programming Languages</p>
+    <ul class="list-disc mx-6 mb-5 grid gap-1">
+      <li>JavaScript (Node.js)</li>
+      <li>TypeScript</li>
+    </ul>
+
+    <p class="w-full font-bold">Frameworks</p>
+    <ul class="list-disc mx-6 mb-5 grid gap-1">
+      <li>React</li>
+      <li>Angular</li>
+    </ul>
+
+    <p class="w-full font-bold">Databases</p>
+    <ul class="list-disc mx-6 mb-5 grid gap-1">
+      <li>MySQL</li>
+      <li>MongoDB</li>
+    </ul>
+
+    <p class="w-full font-bold">Tools</p>
+    <ul class="list-disc mx-6 mb-5 grid gap-1">
+      <li>GitHub</li>
+      <li>MySQL Workbench</li>
+      <li>Postman</li>
+      <li>MongoDB Compass</li>
+      <li>Visual Studio Code</li>
+      <li>Adobe Photoshop</li>
+      <li>Adobe Illustrator</li>
+      <li>Adobe InDesign</li>
+    </ul>
+
+    <p class="w-full font-bold">Test Frameworks</p>
+    <ul class="list-disc mx-6 mb-5 grid gap-1">
+      <li>Mocha</li>
+      <li>Chai</li>
+    </ul>
+
+    <p class="w-full font-bold">Additional</p>
+    <ul class="list-disc mx-6 mb-10 grid gap-1">
+      <li>REST APIs</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Vite</li>
+      <li>Agile Methodologies</li>
+    </ul>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Software Engineering, JavaScript Web Developer"
+      subtitle="04/2022 to 05/2024 at SoftUni Software University, Sofia, Bulgaria"
+    />
+    <TimeLineElement
+      title="Financial Services Management"
+      subtitle="2014 to 2015 (Incomplete) at HU University of Applied Sciences Utrecht (Hogeschool Utrecht), Utrecht, Netherlands"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Graphic Designer"
+      subtitle="From 2018 to Present at www.dianagraf.de, Schrobenhausen, Germany"
+    >
+      Proficient in crafting compelling Logo Designs, Corporate Identity
+      solutions, and Branding strategies. Specialized in Page Layout, Business
+      Card, and Stationery Design, with expertise in Typography and
+      Brochure/Flyer creation.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Owner of Artify By Diana"
+      subtitle="From 03/2017 to Present"
+    >
+      Original paintings, prints, home decor and accessories
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a
+        href="https://softuni.bg/certificates/details/202732/839f485e"
+        target="_blank">MySQL</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://softuni.bg/certificates/details/197826/0c4d4fdd"
+        target="_blank">React</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://softuni.bg/certificates/details/190789/0224db80"
+        target="_blank">HTML & CSS</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://softuni.bg/certificates/details/182925/a49a64bd"
+        target="_blank">Angular</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://softuni.bg/certificates/details/175165/58d3acd3"
+        target="_blank">JS Back-End</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://softuni.bg/certificates/details/167721/dad7624b"
+        target="_blank">JS Applications</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://softuni.bg/Certificates/Details/160021/981abda9"
+        target="_blank">JS Advanced</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://softuni.bg/certificates/details/149449/375b8aca"
+        target="_blank">Programming Fundamentals with JavaScript</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://softuni.bg/certificates/details/133879/e014cc6a"
+        target="_blank">Programming Basics</a
+      >
+    </li>
+    <li>
+      <p>telc Deutsch B2</p>
+    </li>
+    <li>
+      <p>Staatsexamen Nederlands als tweede taal Programma II</p>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Soft Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-2 columns-2 mx-6 mb-10 gap-2">
+    <li>Attention to detail</li>
+    <li>Communication</li>
+    <li>Analysis</li>
+    <li>Teamwork & cooperation</li>
+    <li>Goal oriented</li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Languages</div>
+  </div>
+
+  <ul class="list-disc md:columns-2 columns-2 mx-6 gap-2">
+    <span>
+      <li>Bulgarian</li>
+      <p class="italic text-xs">Native or Bilingual Proficiency</p>
+    </span>
+    <span>
+      <li>English</li>
+      <p class="italic text-xs">Professional Working Proficiency</p>
+    </span>
+    <span>
+      <li>German</li>
+      <p class="italic text-xs">Professional Working Proficiency</p>
+    </span>
+    <span>
+      <li>Dutch</li>
+      <p class="italic text-xs">Professional Working Proficiency</p>
+    </span>
+  </ul>
+</BaseLayout>

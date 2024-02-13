@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">I'm Diana Kovacheva</div>
+    <div class="text-3xl py-3 font-bold">JavaScript Web Developer</div>
+    <div class="py-2">
+      <text class="text-lg">
+        I'm eager to share my passion for JavaScript development with you. As a
+        full-stack developer, I thrive on the dynamic interplay between
+        front-end finesse and back-end wizardry. Whether it's sculpting
+        captivating user interfaces with React and Angular or architecting
+        robust databases using MySQL and MongoDB, I'm all about crafting digital
+        experiences that leave a lasting impression.
+      </text>
+      <br />
+      <br />
+      <text class="text-lg">
+        I'm here and ready to dive into new projects headfirst and contribute to
+        their success. Let's embark on this journey together and create
+        something extraordinary!
+      </text>
+    </div>
+    <div class="mt-8">
+      <a
+        class="btn"
+        href="https://www.linkedin.com/in/diana-kovacheva/"
+        target="_blank"
+      >
+        Let's connect!</a
+      >
+      <a href="/cv" class="btn btn-outline ml-5"> Check my CV</a>
+    </div>
+  </div>
+
+  <!-- <div>
+    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+  </div> -->
+
+  <!-- <HorizontalCard
+    title="Demo Project 1"
+    img="/post_img.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Demo Project 2"
+    img="/post_img.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Demo Project 3"
+    img="/post_img.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+    badge="FOSS"
+  /> -->
+</BaseLayout>
