@@ -5,34 +5,27 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">React Projects</div>
-  </div>
-
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-
-  <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Angular Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="RecipeHub"
+    img="/screenshot-recipeHub-home.png"
+    desc="RecipeHub is a web application built with Angular, Node.js and MongoDB. It allows users to explore, search and create their own recipes. Authenticated users are able to save recipes to their profiles. The application aims to foster a community of food enthusiasts, enabling them to engage with each other through leaving comments to recipes."
+    url="https://recipehub-20652.web.app/"
+    badge="FEATURED"
   />
-  <div class="divider my-0"></div>
+  <div class="divider my-5"></div>
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">React Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="TennisHub"
+    img="/screenshot-tennisHub-club-details.png"
+    desc="TennisHub is a web application built with React, Node.js and MongoDB. It allows tennis enthusiasts to explore tennis clubs, join theme, browse available courts, select preferred time slots, and secure their reservations with just a few clicks."
+    url="https://tennishub-5978b.web.app/"
+    badge="NEW"
+  />
+  <div class="divider my-5"></div>
 </BaseLayout>
